@@ -19,10 +19,10 @@ def main():
     args =parser.parse_args()
     # You can also access the attributes of the Namespace object directly using the vars() 
     # function, which returns a dictionary of the object's attributes and their values.
-    kwargs =  vars(args)
+    kwargs = vars(args)
 
     # scrape data
-    scrape_reddit(**args)
+    scrape_reddit(**kwargs)
 
 
 if __name__=='__main__':
